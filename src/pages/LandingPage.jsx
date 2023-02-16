@@ -1,5 +1,7 @@
 import NavBar from "../components/NavBar";
+
 import Home from "./Home";
+import About from "./About";
 
 
 const LandingPage = () => {
@@ -7,6 +9,7 @@ const LandingPage = () => {
     <div>
       <NavBar />
       <Home />
+      <About />
     </div>
   )
 }

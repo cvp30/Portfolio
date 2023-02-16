@@ -12,12 +12,15 @@ module.exports = {
       wider: '.05em',
     },
     extend: {
+      opacity:{
+        
+      },
       spacing: {
-        '176': '44rem',
+        '200': '50rem',
       }
     },
     colors: {
-      // 'background': '',
+      'background': '#14191f',
       'highlight': '#4bffa5',
       'white': '#ffffff'
     }
