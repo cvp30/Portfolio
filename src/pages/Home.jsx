@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
 
@@ -13,8 +15,8 @@ const Home = () => {
       //   'Me fascina la programación',
       // ],
       stringsElement: '#texto',
-      typeSpeed: 40,
-      backSpeed: 40,
+      typeSpeed: 30,
+      backSpeed: 30,
       backDelay: 1500,
       loop: true,
       showCursor: false
@@ -24,10 +26,11 @@ const Home = () => {
   
 
   return (
-    <div className=" w-full h-176 border border-[red] text-center pt-40">
-      <h1 className="">Hola!</h1>
+    <div className=" w-full h-176 text-center pt-24 font-bold">
+      <h1>Hola!</h1>
+      
       <div className="w-full h-32 my-16">
-        <p className="text-8xl font-bold" ref={el}></p>
+        <p className="text-8xl" ref={el}></p>
       </div>
 
       <div id="texto">
@@ -36,7 +39,14 @@ const Home = () => {
       </div>
       
 
-      <h2>Hola, me llamo <i className="text-highlight ">Carlos Valer</i>, soy Fullstack developer</h2>
+      <h2>
+        Hola, me llamo <i className="text-highlight ">Carlos Valer</i>, soy Fullstack developer
+      </h2>
+    
+      <button className=" border border-highlight hover:bg-highlight transition duration-300 ease-in-out py-3 px-4 rounded-3xl  text-xl mt-20">
+        Download CV
+        <FontAwesomeIcon icon={faDownload} className="ml-4"/>
+      </button>
     </div>
   )
 }

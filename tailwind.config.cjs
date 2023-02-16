@@ -17,8 +17,9 @@ module.exports = {
       }
     },
     colors: {
-      'background': '',
-      'highlight': '#4bffa5'
+      // 'background': '',
+      'highlight': '#4bffa5',
+      'white': '#ffffff'
     }
   },
   plugins: [],

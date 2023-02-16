@@ -5,8 +5,8 @@
 @layer components {
   body{
     background-color: #14191f;
-    /* color: #4bffa5; */
     color: white;
+    letter-spacing: 0.05em;
   }
 }
 
