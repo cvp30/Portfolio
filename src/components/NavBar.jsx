@@ -1,19 +1,21 @@
 
 
 const NavBar = () => {
+  const style = "relative px-1 font-bold after:content-[''] after:absolute after:bg-highlight after:h-[2px] after:w-[0] after:left-0 after:-bottom-1 after:duration-300 hover:after:w-[100%] hover:text-highlight";
+
   return (
     <div className="absolute z-10 box-border  w-full h-24 flex items-center justify-between px-12 ">
       
-      <h1 className="text-highlight font-bold">Carlos Valer</h1>
+      <h1 className="text-6xl text-highlight font-bold">Carlos Valer</h1>
 
-      <menu className="text-lg flex gap-14 font-bold">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="">Skills</a>
-        <a href="">Works</a>
-        <a href="">Experience</a>
-        <a href="">Education</a>
-        <a href="">Contact</a>
+      <menu className="text-lg flex gap-6 fond-bold">
+        <a className={style} href="#home">HOME</a>
+        <a className={style} href="#about">ABOUT</a>
+        <a className={style} href="#skills">SKILLS</a>
+        <a className={style} href="">WORKS</a>
+        <a className={style} href="">EXPERIENCE</a>
+        <a className={style} href="">EDUCATION</a>
+        <a className={style} href="">CONTACT</a>
       </menu>
 
     </div>

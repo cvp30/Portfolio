@@ -7,9 +7,14 @@
     background-color: #14191f;
     color: white;
     letter-spacing: 0.05em;
+    font-family: "Cormorant Garamond",serif;
   }
   html{
     scroll-behavior: smooth;
+  }
+
+  button {
+    border: 3px solid #4bffa5;
   }
 }
 
