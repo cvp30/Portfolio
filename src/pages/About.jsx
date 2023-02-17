@@ -4,16 +4,16 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons'
 const About = () => {
   return (
     <div id="about" className="w-full h-200 flex">
-      <image className="h-full w-[45%] p-16">
+      <div className="h-full w-[45%] p-16">
         <img
           style={{ boxShadow: "-40px 100px rgba(52,173,112,.2)" }}
           className="mx-auto border-[12px] border-[#34ad70] "
           src="http://marveltheme.com/tf/html/johny/johny-legend/img/dark/profile.jpg"
 
         />
-      </image>
+      </div>
 
-      <about className="h-full w-[55%] p-auto pt-24 pl-12">
+      <div className="h-full w-[55%] p-auto pt-24 pl-12">
         <p className="text-5xl font-bold">About Me</p>
 
         <div className="flex flex-col gap-12 text-2xl mt-16 mr-32 text-[#ffffffab]">
@@ -47,7 +47,7 @@ const About = () => {
         </div>
 
 
-      </about>
+      </div>
 
 
     </div>
