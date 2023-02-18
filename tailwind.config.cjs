@@ -22,7 +22,7 @@ module.exports = {
     },
     colors: {
       'background': '#14191f',
-      'highlight': '#4bffa5',
+      'highlight': 'orange',
       'white': '#ffffff'
     }
   },

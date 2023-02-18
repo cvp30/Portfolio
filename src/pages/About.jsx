@@ -6,8 +6,8 @@ const About = () => {
     <div id="about" className="w-full h-200 flex">
       <div className="h-full w-[45%] p-16">
         <img
-          style={{ boxShadow: "-40px 100px rgba(52,173,112,.2)" }}
-          className="mx-auto border-[12px] border-[#34ad70] "
+          style={{ boxShadow: "-40px 100px rgba(192,127,7,.2)" }}
+          className="mx-auto border-[12px] border-[rgb(212,141,8)] "
           src="http://marveltheme.com/tf/html/johny/johny-legend/img/dark/profile.jpg"
 
         />

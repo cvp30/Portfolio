@@ -4,7 +4,7 @@
 
 @layer components {
   body{
-    background-color: #14191f;
+    background-color: #0d0e10;
     color: white;
     letter-spacing: 0.05em;
     font-family: "Cormorant Garamond",serif;
@@ -14,7 +14,7 @@
   }
 
   button {
-    border: 3px solid #4bffa5;
+    border: 3px solid orange;
   }
 }
 
