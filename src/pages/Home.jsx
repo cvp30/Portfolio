@@ -24,8 +24,8 @@ const Home = () => {
 
 
   return (
-    <div id="home" className=" w-full h-200 text-center  font-bold bg-[rgba(0,0,0,.8)] bg-[url('https://hawkticehurst.com/imgs/hero.png')] bg-cover bg-center">
-      <div className="w-full h-200 absolute  bg-[rgba(20,25,31,.95)]">
+    <div id="home" className=" w-full h-200 text-center  font-bold  bg-[url('https://media.istockphoto.com/id/1305012465/es/vector/conexi%C3%B3n-a-internet-sentido-abstracto-de-la-ciencia-y-el-fondo-de-dise%C3%B1o-gr%C3%A1fico-tecnol%C3%B3gico.jpg?s=612x612&w=0&k=20&c=uD0OXt4Seao0vLn0xQn8GQt8Lvs_-oFDxaJVcDq5JOQ=')] bg-cover bg-center">
+      <div className="w-full h-200 absolute  bg-[rgba(20,25,31,.7)]">
         <h1 className="z-0 pt-40">Hello!  👋</h1>
 
         <div className="w-full h-32 my-16">

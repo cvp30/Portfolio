@@ -31,7 +31,7 @@ const About = () => {
         </div>
 
         <div className="flex gap-16 mt-12 ml-12">
-          <a href="https://www.dropbox.com/s/a66rg9sx5iewg3y/CV.pdf?dl=0" target="_blank">
+          <a href="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank">
             <button className=" box-border hover:bg-highlight hover:text-[black] transition duration-300 ease-in-out py-3 px-4   text-2xl ">
               Download CV
               <FontAwesomeIcon icon={faDownload} className="ml-4" />
