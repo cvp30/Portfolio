@@ -17,7 +17,7 @@ const NavBar = () => {
         <a className={style} href="#about">ABOUT</a>
         <a className={style} href="#skills">SKILLS</a>
         <a className={style} href="">WORKS</a>
-        <a className={style} href="">EXPERIENCE</a>
+        {/* <a className={style} href="">EXPERIENCE</a> */}
         <a className={style} href="">EDUCATION</a>
         <a className={style} href="">CONTACT</a>
       </menu>

@@ -24,22 +24,23 @@ const Home = () => {
 
 
   return (
-    <div id="home" className=" w-full h-200 text-center  font-bold  bg-[url('https://media.istockphoto.com/id/1305012465/es/vector/conexi%C3%B3n-a-internet-sentido-abstracto-de-la-ciencia-y-el-fondo-de-dise%C3%B1o-gr%C3%A1fico-tecnol%C3%B3gico.jpg?s=612x612&w=0&k=20&c=uD0OXt4Seao0vLn0xQn8GQt8Lvs_-oFDxaJVcDq5JOQ=')] bg-cover bg-center">
-      <div className="w-full h-200 absolute  bg-[rgba(20,25,31,.7)]">
-        <h1 className="z-0 pt-40">Hello!  👋</h1>
-
+    <div id="home" className=" w-full h-200 text-center  font-bold  bg-homeImg bg-cover bg-center">
+     {/* <div id="home" className=" w-full h-200 text-center  font-bold bg-gradient-to-r from-[black] via-[#3f3f3f] to-[#787878]"> */}
+      <div className="w-full h-200 absolute  bg-[rgba(23,23,23,0.9)]">
+        <h1 className="z-0 pt-40">Welcome!👋</h1>
+        
         <div className="w-full h-32 my-16">
           <p className="text-8xl" ref={el}></p>
         </div>
 
         <div id="texto">
-          <span>I develop <i className="text-highlight ">web apps</i></span>
-          <span>I love <i className="text-highlight">programming</i></span>
+          <span>I develop <i className="text-primary ">web apps</i></span>
+          <span>I love <i className="text-primary">programming</i></span>
         </div>
 
 
         <h1 className=" w-2/5 mx-auto">
-          I´m <i className="text-highlight ">Carlos Valer</i>, Fullstack developer
+          I´m <i className="text-primary ">Carlos Valer</i>, Fullstack developer
         </h1>
 
         <div className="flex flex-col justify-center items-center mt-20 ">

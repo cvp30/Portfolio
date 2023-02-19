@@ -3,11 +3,11 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   return (
-    <div id="about" className="w-full h-200 flex">
+    <div id="about" className="w-full h-200 flex ">
       <div className="h-full w-[45%] p-16">
         <img
-          style={{ boxShadow: "-40px 100px rgba(192,127,7,.2)" }}
-          className="mx-auto border-[12px] border-[rgb(212,141,8)] "
+          style={{ boxShadow: "-40px 100px rgba(9,198,255,.2)" }}
+          className="mx-auto border-[12px] border-primary "
           src="http://marveltheme.com/tf/html/johny/johny-legend/img/dark/profile.jpg"
 
         />
@@ -32,14 +32,14 @@ const About = () => {
 
         <div className="flex gap-16 mt-12 ml-12">
           <a href="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank">
-            <button className=" box-border hover:bg-highlight hover:text-[black] transition duration-300 ease-in-out py-3 px-4   text-2xl ">
+            <button className=" box-border hover:bg-primary hover:text-[black] transition duration-300 ease-in-out py-3 px-4   text-2xl ">
               Download CV
               <FontAwesomeIcon icon={faDownload} className="ml-4" />
             </button>
           </a>
 
           <a href="#contact">
-            <button className="font-bold hover:bg-highlight hover:text-[black] transition duration-300 ease-in-out py-3 px-4 text-2xl ">
+            <button className="font-bold hover:bg-primary hover:text-[black] transition duration-300 ease-in-out py-3 px-4 text-2xl ">
               Hire me!
             </button>
           </a>

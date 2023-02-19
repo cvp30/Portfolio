@@ -7,14 +7,14 @@
     background-color: #0d0e10;
     color: white;
     letter-spacing: 0.05em;
-    font-family: "Cormorant Garamond",serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
   html{
     scroll-behavior: smooth;
   }
 
   button {
-    border: 3px solid orange;
+    border: 3px solid rgb(9,198,255);
   }
 }
 

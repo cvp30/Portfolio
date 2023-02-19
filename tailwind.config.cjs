@@ -12,6 +12,9 @@ module.exports = {
       wider: '.05em',
     },
     extend: {
+      backgroundImage:{
+        'homeImg': "url('http://stanislaschaillou.com/suggestive-cad/IMG/main_1.gif')"
+      },
       opacity:{
         
       },
@@ -21,8 +24,7 @@ module.exports = {
       }
     },
     colors: {
-      'background': '#14191f',
-      'highlight': 'orange',
+      'primary': 'rgb(9,198,255)',
       'white': '#ffffff'
     }
   },
