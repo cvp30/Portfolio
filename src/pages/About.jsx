@@ -19,7 +19,7 @@ const About = () => {
         <div className="flex flex-col gap-12 text-2xl mt-16 mr-32 text-[#ffffffab]">
           <p>
             I am passionate about web technology development, although I have been developing
-            for a short time I have learned a lot, with +800 hrs. a lot, with +800 hrs. developing,
+            for a short time I have learned a lot, with +800 hrs. developing,
             I keep growing and improving my current skills.  At this moment I'm looking for
             my first opportunity to show my skills and start my way in what I love to do
             and start my way in what I love to do.

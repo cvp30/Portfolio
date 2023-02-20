@@ -13,8 +13,8 @@ const Home = () => {
   useEffect(() => {
     const options = {
       stringsElement: '#texto',
-      typeSpeed: 30,
-      backSpeed: 30,
+      typeSpeed: 60,
+      backSpeed: 60,
       backDelay: 1500,
       loop: true,
       showCursor: false
@@ -24,10 +24,9 @@ const Home = () => {
 
 
   return (
-    <div id="home" className=" w-full h-200 text-center  font-bold  bg-homeImg bg-cover bg-center">
-     {/* <div id="home" className=" w-full h-200 text-center  font-bold bg-gradient-to-r from-[black] via-[#3f3f3f] to-[#787878]"> */}
-      <div className="w-full h-200 absolute  bg-[rgba(23,23,23,0.9)]">
-        <h1 className="z-0 pt-40">Welcome!👋</h1>
+    <div id="home" className="  pt-20 w-full h-200 text-center font-bold">
+      <div className="w-full h-200 absolute">
+        <h1 className="z-0 ">Welcome!👋</h1>
         
         <div className="w-full h-32 my-16">
           <p className="text-8xl" ref={el}></p>

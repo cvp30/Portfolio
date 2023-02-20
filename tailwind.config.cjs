@@ -12,9 +12,9 @@ module.exports = {
       wider: '.05em',
     },
     extend: {
-      backgroundImage:{
-        'homeImg': "url('http://stanislaschaillou.com/suggestive-cad/IMG/main_1.gif')"
-      },
+      // backgroundImage:{
+      //   'homeImg': "url('https://cdn.wallpapersafari.com/1/5/20xSop.jpg')"
+      // },
       opacity:{
         
       },
