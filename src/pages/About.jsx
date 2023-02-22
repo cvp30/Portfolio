@@ -3,20 +3,20 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   return (
-    <div id="about" className="w-full h-200 flex ">
-      <div className="h-full w-[45%] p-16">
+    <div className="w-full h-full flex p-4">
+      <div className="h-full w-[45%] ">
         <img
-          style={{ boxShadow: "-40px 100px rgba(9,198,255,.2)" }}
+          style={{ boxShadow: "-50px 60px rgba(9,198,255,.2)" }}
           className="mx-auto border-[12px] border-primary "
           src="http://marveltheme.com/tf/html/johny/johny-legend/img/dark/profile.jpg"
 
         />
       </div>
 
-      <div className="h-full w-[55%] p-auto pt-24 pl-12">
-        <p className="text-5xl font-bold">About Me</p>
+      <div className="h-full w-[55%] p-auto pt-12 pl-12">
+        <p className="text-5xl font-bold tracking-[.4rem]">About Me</p>
 
-        <div className="flex flex-col gap-12 text-2xl mt-16 mr-32 text-[#ffffffab]">
+        <div className="flex flex-col gap-12 text-lg mt-16 mr-32 text-[#ffffffab]">
           <p>
             I am passionate about web technology development, although I have been developing
             for a short time I have learned a lot, with +800 hrs. developing,
