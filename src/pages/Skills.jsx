@@ -80,7 +80,7 @@ const Skills = () => {
   }
 
   return (
-    <div className="w-full flex flex-col items-center font-bold pt-12">
+    <div id="skills" className="w-full flex flex-col items-center font-bold pt-12">
       <p className="tracking-[.4rem] text-5xl">My Skills</p>
 
       <div className="flex flex-col items-center gap-8 w-1/3 py-12">

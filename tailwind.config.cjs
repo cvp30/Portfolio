@@ -12,18 +12,22 @@ module.exports = {
       wider: '.05em',
     },
     extend: {
-      // backgroundImage:{
-      //   'homeImg': "url('https://cdn.wallpapersafari.com/1/5/20xSop.jpg')"
-      // },
+      rotate: {
+        '8': '8deg'
+      },
       opacity:{
         
       },
       spacing: {
-        '112':'38rem',
+        '112': '38rem',
         '200': '50rem',
+        '250': '62.5rem',
+        '320': '80rem',
       }
     },
     colors: {
+      'black': 'black',
+      'silver': '#cccaca',
       'primary': 'rgb(9,198,255)',
       'white': '#ffffff'
     }

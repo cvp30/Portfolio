@@ -4,35 +4,34 @@
 
 @layer components {
   body{
-    /* background-color: #242c34; */
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-    background-attachment: fixed;
-    color: white;
+    background: linear-gradient(to right, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #eeeeee 75%, #bcbcbc 100%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.1rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
 
-  button {
+  /* button {
     border: 3px solid rgb(9,198,255);
-  }
+  } */
 
-  .vertically {
+  /* .vertically {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-  }
+  } */
 }
 
 @layer base {
   h1 {
-    @apply text-4xl;
+    @apply text-8xl;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-5xl;
   }
   h3 {
     @apply text-xl;
   }
 }
+
+
 
 /* ---------------- */
 /* "dependencies": {
