@@ -16,9 +16,9 @@ const NavBar = () => {
         <a className={style} href="#home">HOME</a>
         <a className={style} href="#about">ABOUT</a>
         <a className={style} href="#skills">SKILLS</a>
-        <a className={style} href="#">WORKS</a>
+        <a className={style} href="#works">WORKS</a>
         {/* <Link className={style} to="">EDUCATION</Link> */}
-        <a className={style} href="#">CONTACT</a>
+        <a className={style} href="#contact">CONTACT</a>
       </div>
 
     </div>
