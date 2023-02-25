@@ -7,6 +7,10 @@
     background: linear-gradient(to right, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #eeeeee 75%, #bcbcbc 100%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.1rem;
+    
+  }
+  html {
+    scroll-behavior: smooth;
   }
 
   /* button {

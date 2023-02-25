@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       <Link href="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank">
-        <button className=" box-border border hover:bg-black hover:text-white transition duration-300 ease-in-out py-3 px-4   text-2xl ">
+        <button className=" box-border border-4 hover:bg-black hover:text-white transition duration-300 ease-in-out py-3 px-4   text-2xl ">
           Download CV
           <FontAwesomeIcon icon={faDownload} className="ml-4" />
         </button>

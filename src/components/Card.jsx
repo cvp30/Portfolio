@@ -23,11 +23,11 @@ const Card = ({ title, image, tech, type, githubLink, deployLink }) => {
 
       <div className="w-full flex justify-around ">
         <Link to={githubLink} target="_blank"> 
-          <button className="border px-4 py-3 tracking-[0.1rem] box-border hover:bg-black hover:text-white transition duration-300 ease-in-out">Code</button>
+          <button className="border-4 px-4 py-3 tracking-[0.1rem] box-border hover:bg-black hover:text-white transition duration-300 ease-in-out">Code</button>
         </Link>
 
         <Link to={deployLink} target="_blank"> 
-          <button className="border px-4 py-3 tracking-[0.1rem] box-border hover:bg-black hover:text-white transition duration-300 ease-in-out">Demo</button>
+          <button className="border-4 px-4 py-3 tracking-[0.1rem] box-border hover:bg-black hover:text-white transition duration-300 ease-in-out">Demo</button>
         </Link>
       </div>
     </div>

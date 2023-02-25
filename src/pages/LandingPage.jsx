@@ -5,6 +5,7 @@ import About from "./About"
 import Skills from "./Skills";
 import Works from "./Works"
 import Contact from "./Contact";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <Skills />
       <Works />
       <Contact />
+      <Footer />
     </div>
   )
 }
