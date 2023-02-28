@@ -4,12 +4,17 @@
 
 @layer components {
   body{
+    background-image: url("https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/background.jpg");
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.1rem;
-    
+    color: white;
   }
   html {
     scroll-behavior: smooth;
+  }
+
+  .titles{
+    background-image: linear-gradient(180deg, #ff014f 0%, #8b002b 100%);
   }
 
   /* button {

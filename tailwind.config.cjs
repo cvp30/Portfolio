@@ -12,11 +12,18 @@ module.exports = {
       wider: '.05em',
     },
     extend: {
+      aspectRatio: {
+        '2/3': '9 / 9',
+        '20/9':'20 / 9',
+        '22/9':'22 / 9'
+      },
+      backgroundImage: {
+        'card' : "url('./src/assets/landing.jpg')"
+      },
       rotate: {
         '8': '8deg'
       },
       opacity:{
-        
       },
       spacing: {
         '112': '38rem',
@@ -26,9 +33,10 @@ module.exports = {
       }
     },
     colors: {
+      'darkGray': '#252525',
       'black': 'black',
       'silver': '#cccaca',
-      'primary': 'rgb(9,198,255)',
+      'primary': '#f2295b',
       'white': '#ffffff'
     }
   },

@@ -7,48 +7,58 @@ import Database from '../assets/database.png'
 
 const About = () => {
   return (
-    <div id="about" className="w-full h-screen flex flex-col items-center gap-8 pt-24">
-      <h2 className=" font-bold ">About Me</h2>
-
-      <div className="w-1/2 text-xl">
-        <p>
-          I consider myself passionate about web development, self-taught,
-          with a great ambition to continue growing and learning.
-        </p>
-        <br />
-        <p>
-          I am currently looking for my first job and the great opportunity
-          to show my skills and apply them to some real life environment
-        </p>
+    <div id="about" className='w-full h-full max-w-screen-2xl flex justify-center box-border px-20 pt-24 gap-12 border'>
+      
+      <div className='relative bg-card h-[31rem] aspect-square m-8 border'>
+        <img className='absolute bottom-0 right-16 h-[33rem]' src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png" alt="" />
       </div>
 
-      <Link href="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank">
-        <button className=" box-border border-4 hover:bg-black hover:text-white transition duration-300 ease-in-out py-3 px-4   text-2xl ">
-          Download CV
-          <FontAwesomeIcon icon={faDownload} className="ml-4" />
-        </button>
-      </Link>
+      <div className='border w-1/2'>
 
-      <div className='text-lg text-center flex justify-center gap-44 w-full h-1/4'>
-        <div className='w-48  '>
-          <div className='text-6xl font-bold text-primary h-2/3 pt-12'>UI/UX</div>
-        </div>
-
-        <div className='w-48  '>
-          <img className='mx-auto h-2/3  pt-6' src={WebDev}/>
-        </div>
-        
-        <div className='w-48 '>
-          <img className='mx-auto h-2/3  pt-6' src={Database} alt="" />
-        </div>
       </div>
-
-      <p className='text-xl w-1/2 text-center'>
-      I can create and design the site based on your needs and suggestions, 
-      I can also start from scratch and consult you during the work
-      </p>
-    
     </div>
+    // <div id="about" className="w-full h-screen flex flex-col items-center gap-8 pt-24">
+    //   <h2 className=" font-bold ">About Me</h2>
+
+    //   <div className="w-1/2 text-xl">
+    //     <p>
+    //       I consider myself passionate about web development, self-taught,
+    //       with a great ambition to continue growing and learning.
+    //     </p>
+    //     <br />
+    //     <p>
+    //       I am currently looking for my first job and the great opportunity
+    //       to show my skills and apply them to some real life environment
+    //     </p>
+    //   </div>
+
+    //   <Link href="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank">
+    //     <button className=" box-border border-4 hover:bg-black hover:text-white transition duration-300 ease-in-out py-3 px-4   text-2xl ">
+    //       Download CV
+    //       <FontAwesomeIcon icon={faDownload} className="ml-4" />
+    //     </button>
+    //   </Link>
+
+    //   <div className='text-lg text-center flex justify-center gap-44 w-full h-1/4'>
+    //     <div className='w-48  '>
+    //       <div className='text-6xl font-bold text-primary h-2/3 pt-12'>UI/UX</div>
+    //     </div>
+
+    //     <div className='w-48  '>
+    //       <img className='mx-auto h-2/3  pt-6' src={WebDev}/>
+    //     </div>
+        
+    //     <div className='w-48 '>
+    //       <img className='mx-auto h-2/3  pt-6' src={Database} alt="" />
+    //     </div>
+    //   </div>
+
+    //   <p className='text-xl w-1/2 text-center'>
+    //   I can create and design the site based on your needs and suggestions, 
+    //   I can also start from scratch and consult you during the work
+    //   </p>
+    
+    // </div>
   )
 }
 
