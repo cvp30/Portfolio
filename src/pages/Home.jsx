@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-
+import Section from "../context/Section";
 import github from '../assets/networks/github.png'
 import linkedin from '../assets/networks/linkedin.png'
 import twitter from '../assets/networks/twitter.png'
@@ -22,13 +22,15 @@ const Home = () => {
     };
     typed.current = new Typed(el.current, options);
 
-    
+
   }, []);
 
   return (
+
     <div id="home" className="font-bold w-full h-screen  pt-20 flex justify-center items-center">
-      <div className=" box-border relative flex flex-row bg-card bg-cover bg-center bg-no-repeat  mx-20 h-[28rem]  aspect-20/9 xl:aspect-22/9 border-4 border-darkGray rounded-lg">
-        <div  className="absolute w-full h-full blur-xl border border-darkGray bg-[rgba(0,0,0,.6)]"></div>
+
+      <div className=" box-border relative flex flex-row bg-card bg-cover bg-center bg-no-repeat  mx-20 h-[28rem]  aspect-20/9 xl:aspect-22/9 border-4 border-black rounded-lg">
+        <div className="absolute w-full h-full blur-sm border border-black bg-[rgba(0,0,0,.6)]"></div>
         <div className="z-10 flex flex-col justify-center gap-8 px-10 lg:w-7/12">
 
           <p className="titles box-border text-xl w-32 px-4 py-1 rounded">WELCOME</p>
