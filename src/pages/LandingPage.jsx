@@ -16,9 +16,9 @@ const LandingPage = () => {
       <Home />
       <About />
       <Skills />
-      {/*<Works />
+      <Works />
       <Contact />
-      <Footer /> */}
+      <Footer /> 
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.gif'
 import Button from './Button';
-
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 const NavBar = () => {
   
   const style = "relative px-1 font-bold after:content-[''] after:absolute after:bg-primary after:h-[2px] after:w-[0] after:left-0 after:-bottom-1 after:duration-300 hover:after:w-[100%] hover:text-primary";
@@ -21,7 +21,7 @@ const NavBar = () => {
           <a className={style} href="#contact">Contact</a>
         </div>
 
-        <Button content="HIRE ME"/>
+        <Button content="HIRE ME" icon={faBell} />
 
       </div>
 

@@ -26,6 +26,7 @@ module.exports = {
       opacity:{
       },
       spacing: {
+        '120': '30rem',
         '112': '38rem',
         '200': '50rem',
         '250': '62.5rem',
@@ -33,7 +34,7 @@ module.exports = {
       }
     },
     colors: {
-      'darkGray': '#252525',
+      'darkGray': '#1B1B1B',
       'black': 'black',
       'silver': '#cccaca',
       'primary': '#f2295b',

@@ -1,56 +1,35 @@
-import { Link } from 'react-router-dom'
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
-import WebDev from '../assets/webDev.png'
-import Database from '../assets/database.png'
 
 const About = () => {
   return (
-    <div id="about" className="w-full h-screen flex flex-col items-center gap-8 pt-24">
+    <div id="about" className="w-full h-screen max-w-screen-2xl flex flex-col items-center mx-auto gap-20 pt-24">
       <p className="titles box-border text-3xl px-4 py-1 rounded">ABOUT ME</p>
 
-      <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-programmer-mobile-app-development-flaticons-lineal-color-flat-icons-3.png" alt="" />
-      <img src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/null/external-write-graphic-design-xnimrodx-blue-xnimrodx.png" alt="" />
-      <img src="" alt="" />
-      {/* <div className="w-1/2 text-xl">
-        <p>
-          I consider myself passionate about web development, self-taught,
-          with a great ambition to continue growing and learning.
-        </p>
-        <br />
-        <p>
-          I am currently looking for my first job and the great opportunity
-          to show my skills and apply them to some real life environment
-        </p>
-      </div>
-
-      <Link href="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank">
-        <button className=" box-border border-4 hover:bg-black hover:text-white transition duration-300 ease-in-out py-3 px-4   text-2xl ">
-          Download CV
-          <FontAwesomeIcon icon={faDownload} className="ml-4" />
-        </button>
-      </Link>
-
-      <div className='text-lg text-center flex justify-center gap-44 w-full h-1/4'>
-        <div className='w-48  '>
-          <div className='text-6xl font-bold text-primary h-2/3 pt-12'>UI/UX</div>
-        </div>
-
-        <div className='w-48  '>
-          <img className='mx-auto h-2/3  pt-6' src={WebDev}/>
+      <div className='flex gap-16 container'>
+        <div className='relative py-10 px-6 border-2 border-black shadow-lg shadow-black bg-darkGray w-1/3 rounded-lg flex flex-col gap-2 items-center'>
+          <img className='absolute -top-8 left-40' src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-programmer-mobile-app-development-flaticons-lineal-color-flat-icons-3.png" alt="" />
+          <p className='font-bold text-primary'>WHO I AM?</p>
+          <p className='text-sm'>I consider myself passionate about web development, self-taught,
+          with a great ambition to continue growing and learning.</p>
         </div>
         
-        <div className='w-48 '>
-          <img className='mx-auto h-2/3  pt-6' src={Database} alt="" />
+        <div className='relative py-10 px-6 border-2 border-black shadow-lg shadow-black bg-darkGray w-1/3 rounded-lg flex flex-col gap-2 items-center'>
+          <img className='absolute -top-8 left-40' src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/null/external-write-graphic-design-xnimrodx-blue-xnimrodx.png" alt="" />
+          <p className='font-bold text-primary'>EDUCATION</p>
+          <p className='text-sm'>
+            I studied Computer Science, along the way I discovered my passion for web development, 
+            I trained in it and currently I continue to learn and improve my skills as a fullstack developer. 
+          </p>
+        </div>
+
+        <div className='relative py-10 px-6 border-2 border-black shadow-lg shadow-black bg-darkGray w-1/3 rounded-lg flex flex-col gap-2 items-center'>
+          <img className='absolute -top-12 left-36' src="https://img.icons8.com/external-prettycons-flat-prettycons/94/null/external-job-social-media-prettycons-flat-prettycons.png" alt="" />
+          <p className='font-bold text-primary'>JOB</p>
+          <p className='text-sm'>
+            I am currently looking for my first job and the great opportunity
+            to show my skills and apply them to some real life environment
+          </p>
         </div>
       </div>
-
-      <p className='text-xl w-1/2 text-center'>
-      I can create and design the site based on your needs and suggestions, 
-      I can also start from scratch and consult you during the work
-      </p> */}
-    
     </div>
   )
 }
