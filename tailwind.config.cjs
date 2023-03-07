@@ -18,7 +18,7 @@ module.exports = {
         '22/9':'22 / 9'
       },
       backgroundImage: {
-        'card' : "url('./src/assets/landing.png')"
+        'card' : "url('https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/landingpage-1.jpg')"
       },
       rotate: {
         '8': '8deg'
