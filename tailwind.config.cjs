@@ -18,7 +18,7 @@ module.exports = {
         '22/9':'22 / 9'
       },
       backgroundImage: {
-        'card' : "url('./src/assets/landing.jpg')"
+        'card' : "url('./src/assets/landing.png')"
       },
       rotate: {
         '8': '8deg'

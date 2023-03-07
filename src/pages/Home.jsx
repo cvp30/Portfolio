@@ -5,6 +5,7 @@ import github from '../assets/networks/github.png'
 import linkedin from '../assets/networks/linkedin.png'
 import twitter from '../assets/networks/twitter.png'
 import LinkNetwork from "../components/LinkNetwork";
+import card from '../assets/landing.png'
 
 const Home = () => {
 
@@ -28,7 +29,7 @@ const Home = () => {
   return (
 
     <div id="home" className="font-bold w-full h-screen  pt-20 flex justify-center items-center">
-
+      {/* <img src="../assets/landing.png" alt="" /> */}
       <div className=" box-border relative flex flex-row bg-card bg-cover bg-center bg-no-repeat  mx-20 h-[28rem]  aspect-20/9 xl:aspect-22/9 border-4 border-black rounded-lg">
         <div className="absolute w-full h-full blur-sm border border-black bg-[rgba(0,0,0,.6)]"></div>
         <div className="z-10 flex flex-col justify-center gap-8 px-10 lg:w-7/12">
