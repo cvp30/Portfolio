@@ -7,13 +7,13 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_56e9qaf', 'template_eyx3pnb', form.current, '3siD_3fKDOAd1t8nH')
-      .then((result) => {
-        alert(result.text);
-      }, (error) => {
-        alert(error.text);
-      });
+    console.log(form.current)
+    // emailjs.sendForm('service_56e9qaf', 'template_eyx3pnb', form.current, '3siD_3fKDOAd1t8nH')
+    //   .then((result) => {
+    //     alert(result.text);
+    //   }, (error) => {
+    //     alert(error.text);
+    //   });
   };
 
   return (
@@ -27,7 +27,7 @@ const Contact = () => {
         
         <textarea style={{background:'none'}} className='w-full h-60 p-4 outline-none  border-l-black border-l-4 border-b-black border-b-4 resize-none' name="message" placeholder='I want to contact you...'required />
         
-        <input className='box-border flex gap-3 items-center p-2 bg-gradient-to-b from-[#f2295b] to-[#FF3A3A] rounded' type="submit" value="Send" />
+        <input className='box-border flex gap-3 items-center py-1 px-3  bg-gradient-to-b from-[#f2295b] to-[#FF3A3A] rounded' type="submit" value="Send" />
       </form>
     </div>
   )
