@@ -17,7 +17,7 @@ export const skillsNow = [
   },
   {
     title: "HTML5",
-    icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/null/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png",
+    icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/null/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png",
   },
   {
     title: "CSS",

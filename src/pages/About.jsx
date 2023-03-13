@@ -1,75 +1,65 @@
+import Button from "../components/Button";
+import Title from "../components/Title";
+import { Download } from "../icons";
+
 
 const About = () => {
+  
+  const info = [
+    {
+      title: "Who I am?",
+      content: "Hi, I consider myself passionate about web development, self-taught with a great ambition to continue growing and learning.",
+      image: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-programmer-mobile-app-development-flaticons-lineal-color-flat-icons-3.png",
+    },
+    {
+      title: "Education",
+      content: "I studied Computer Science, along the way I discovered my passion for web development I trained in it and currently I continue to learn and improve my skills as a fullstack developer.",
+      image: "https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/null/external-write-graphic-design-xnimrodx-blue-xnimrodx.png",
+    },
+    {
+      title: "Job",
+      content: "I am currently looking for my first job and the great opportunity to show my skills and apply them to some real life environment",
+      image: "https://img.icons8.com/external-prettycons-flat-prettycons/64/null/external-job-social-media-prettycons-flat-prettycons.png",
+    },
+  ]
+  
   return (
-    <div id="about" className="h-full max-w-screen-2xl mx-auto flex flex-col justify-between items-center pt-20 font-bold dark:text-white">
-      <h2 className="text-orange">About me</h2>
+    
+    <div id="about" className="h-screen max-w-screen-2xl pt-10 mx-auto flex flex-col justify-around items-center font-bold dark:text-white">
+      <Title>
+        About Me
+      </Title>
 
-      <div className="flex justify-around w-full h-96 px-12">
-        <div className="box-border flex flex-col gap-8 w-80 p-4 shadow-lg shadow-orange">
-          <div className="flex justify-center items-center gap-2">
-            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-programmer-mobile-app-development-flaticons-lineal-color-flat-icons-3.png" alt="" />
-            <p>Who I am?</p>
-          </div>
-          <p className=" text-xs tracking-wider">
-            Hi, I consider myself passionate about web development, self-taught,
-            with a great ambition to continue growing and learning.
-          </p>
+      <div className="w-full h-5/6 flex justify-center items-center">
+        <div className="w-2/5 h-full flex flex-col items-center justify-center gap-10">
+          <img className=" aspect-[3/4] h-3/5" src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png" alt="" />
+          <Button>
+            <Download />
+            <p>View my CV</p>
+          </Button>
         </div>
 
-        <div className="box-border flex flex-col gap-8 w-80 p-4 shadow-lg  shadow-orange">
-          <div className="flex justify-center items-center gap-2">
-            <img src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/null/external-write-graphic-design-xnimrodx-blue-xnimrodx.png" alt="" />
-            <p>Education</p>
-          </div>
-          <p className="text-xs tracking-wider">
-            I studied Computer Science, along the way I discovered my passion for web development,
-            I trained in it and currently I continue to learn and improve my skills as a fullstack developer.
-          </p>
-        </div>
-
-        <div className="box-border flex flex-col gap-8 w-80 p-4 shadow-lg shadow-orange">
-          <div className="flex justify-center items-center gap-2">
-            <img src="https://img.icons8.com/external-prettycons-flat-prettycons/64/null/external-job-social-media-prettycons-flat-prettycons.png" alt="" />
-            <p>Job</p>
-          </div>
-          <p className="text-xs tracking-wider">
-            I am currently looking for my first job and the great opportunity
-            to show my skills and apply them to some real life environment
-          </p>
+        <div className="flex flex-col items-center justify-around h-full w-3/5">
+          {
+            info.map(( card, key )=> {
+              return (
+                <div key={key} className="box-border flex gap-2 w-[70%] p-2 shadow-lg shadow-darkblue dark:shadow-white">
+                  <div className="flex w-1/4 justify-center items-center">
+                    <img className="aspect-square " src={card.image} alt="" />
+                  </div>
+                  <div className="w-3/4">
+                    <p className="font-bold">{card.title}</p>
+                    <p className="text-xs tracking-wider">
+                      {card.content}
+                    </p>
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
-
     </div>
-    // <div id="about" className="w-full h-full max-w-screen-2xl flex flex-col items-center mx-auto gap-20 pt-24">
-    //   <p className="titles box-border text-3xl px-4 py-1 rounded">ABOUT ME</p>
-
-    //   <div className='flex gap-16 container'>
-    //     <div className='relative py-10 px-6 border-2 border-black shadow-lg shadow-black bg-darkGray w-1/3 rounded-lg flex flex-col gap-2 items-center'>
-    //       <img className='absolute -top-8 left-40' src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-programmer-mobile-app-development-flaticons-lineal-color-flat-icons-3.png" alt="" />
-    //       <p className='font-bold text-primary'>WHO I AM?</p>
-    //       <p className='text-sm'>I consider myself passionate about web development, self-taught,
-    //       with a great ambition to continue growing and learning.</p>
-    //     </div>
-
-    //     <div className='relative py-10 px-6 border-2 border-black shadow-lg shadow-black bg-darkGray w-1/3 rounded-lg flex flex-col gap-2 items-center'>
-    //       <img className='absolute -top-8 left-40' src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/null/external-write-graphic-design-xnimrodx-blue-xnimrodx.png" alt="" />
-    //       <p className='font-bold text-primary'>EDUCATION</p>
-    //       <p className='text-sm'>
-    //         I studied Computer Science, along the way I discovered my passion for web development, 
-    //         I trained in it and currently I continue to learn and improve my skills as a fullstack developer. 
-    //       </p>
-    //     </div>
-
-    //     <div className='relative py-10 px-6 border-2 border-black shadow-lg shadow-black bg-darkGray w-1/3 rounded-lg flex flex-col gap-2 items-center'>
-    //       <img className='absolute -top-12 left-36' src="https://img.icons8.com/external-prettycons-flat-prettycons/94/null/external-job-social-media-prettycons-flat-prettycons.png" alt="" />
-    //       <p className='font-bold text-primary'>JOB</p>
-    //       <p className='text-sm'>
-    //         I am currently looking for my first job and the great opportunity
-    //         to show my skills and apply them to some real life environment
-    //       </p>
-    //     </div>
-    //   </div>
-    // </div>
   )
 }
 
