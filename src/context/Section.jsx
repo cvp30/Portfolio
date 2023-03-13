@@ -16,10 +16,6 @@ const Section = () => {
   },[val])
 
   return (
-    // <>
-    //   <div style={{height: val}} className="relative z-20 top-0 left-0 w-1/3 h-full bg-[red]"></div>
-
-    // </>
     <div style={{height: val}} className='absolute w-screen divide-x'>
       <div className="absolute z-20 -top-0 left-0 w-1/3 h-full bg-[red]"></div>
 

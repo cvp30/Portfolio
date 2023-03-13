@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode:"class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +13,10 @@ module.exports = {
       wider: '.05em',
     },
     extend: {
+      dropShadow:{
+        'icon': '0px 2px 1px #2d4059',
+        'iconDark': '0px 2px 3px white',
+      },
       aspectRatio: {
         '2/3': '9 / 9',
         '20/9':'20 / 9',
@@ -34,11 +39,16 @@ module.exports = {
       }
     },
     colors: {
-      'darkGray': '#1B1B1B',
-      'black': 'black',
-      'silver': '#cccaca',
-      'primary': '#f2295b',
-      'white': '#ffffff'
+      'light': '#eeeeee',
+      'orange': '#ff5722',
+      'darkblue': '#2d4059',
+      'dark': '#222831',
+      'white': 'white',
+      // 'darkGray': '#1B1B1B',
+      // 'black': 'black',
+      // 'silver': '#cccaca',
+      // 'primary': '#f2295b',
+      // 'white': '#ffffff'
     }
   },
   plugins: [],

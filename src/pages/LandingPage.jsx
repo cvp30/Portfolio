@@ -13,12 +13,14 @@ const LandingPage = () => {
 
 
       <NavBar />
-      <Home />
-      <About />
-      <Skills />
-      <Works />
+      <div className="pl-36">
+        <Home />
+        <About />
+        <Skills />
+      </div>
+      {/*<Works />
       <Contact />
-      <Footer /> 
+      <Footer />  */}
     </div>
   )
 }
