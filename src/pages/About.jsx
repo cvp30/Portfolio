@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Title from "../components/Title";
 import { Download } from "../icons";
@@ -33,10 +34,13 @@ const About = () => {
       <div className="w-full h-5/6 flex justify-center items-center">
         <div className="w-2/5 h-full flex flex-col items-center justify-center gap-10">
           <img className=" aspect-[3/4] h-3/5" src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png" alt="" />
-          <Button>
-            <Download />
-            <p>View my CV</p>
-          </Button>
+
+          <Link to="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank" >
+            <Button>
+              <Download />
+              <p>View my CV</p>
+            </Button>
+          </Link>
         </div>
 
         <div className="flex flex-col items-center justify-around h-full w-3/5">

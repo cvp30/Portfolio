@@ -36,10 +36,12 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col gap-12">
-          <Button>
-            <Alert />
-            <p>HIRE ME</p>
-          </Button>
+          <a href="#contact">
+            <Button>
+              <Alert />
+              <p>HIRE ME</p>
+            </Button>
+          </a>
           <div className="flex justify-center gap-12 items-center dark:text-white">
             <Link>
               <Github />

@@ -30,7 +30,7 @@ const NavBar = () => {
           <p className='text-sm'>Works</p>
         </a>
 
-        <a className='flex gap-3 justify-start items-center pl-4 hover:text-orange'>
+        <a href="#contact" className='flex gap-3 justify-start items-center pl-4 hover:text-orange'>
           <Contact />
           <p className='text-sm'>Contact</p>
         </a>
