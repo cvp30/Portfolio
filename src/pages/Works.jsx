@@ -1,11 +1,14 @@
 import Card from '../components/Card';
+import Title from '../components/Title';
 import {data} from '../data/works'
 
 
 const Works = () => {
   return (
-    <div id="works" className="w-full h-full mx-auto max-w-screen-2xl  flex flex-col items-center gap-16 pt-24">
-      <p className="titles box-border text-3xl px-4 py-1 rounded">MY WORKS</p>
+    <div id="works" className="w-full h-full mx-auto max-w-screen-2xl flex flex-col items-center gap-16 pt-10">
+      <Title>
+        My Works
+      </Title>
 
       <div className='w-full px-24 flex flex-wrap justify-center gap-12'>
         {

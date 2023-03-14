@@ -25,7 +25,7 @@ const NavBar = () => {
           <p className='text-sm'>Skills</p>
         </a>
 
-        <a className='flex gap-3 justify-start items-center pl-4 hover:text-orange'>
+        <a href="#works" className='flex gap-3 justify-start items-center pl-4 hover:text-orange'>
           <Work />
           <p className='text-sm'>Works</p>
         </a>

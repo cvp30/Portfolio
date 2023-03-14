@@ -17,10 +17,10 @@ const LandingPage = () => {
         <Home />
         <About />
         <Skills />
+        <Works />
+        <Contact />
+        <Footer /> 
       </div>
-      {/*<Works />
-      <Contact />
-      <Footer />  */}
     </div>
   )
 }

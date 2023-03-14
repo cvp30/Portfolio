@@ -7,7 +7,7 @@ const Skills = () => {
 
   const display = (arr) => {
     return (
-      <div className="h-full w-full flex flex-wrap gap-6">
+      <div className="h-5/6 w-full flex flex-wrap gap-x-4">
         {
           arr.map((elem, key) => {
             return (
@@ -27,24 +27,24 @@ const Skills = () => {
         My Skills
       </Title>
 
-      <div className="flex flex-col items-center gap-8 w-4/5 h-2/3">
-        <div className="flex justify-around gap-10 w-full">
-          <button onClick={()=> setState(1)} className={`${state===1?'after:border after:w-full text-orange':'after:w-0'} relative hover:text-orange transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:h-0 after:absolute hover:after:border after:border-orange after:left-0 after:-bottom-2`}>Using Now</button>
-          <button onClick={()=> setState(2)} className={`${state===2?'after:border after:w-full text-orange':'after:w-0'} relative hover:text-orange transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:h-0 after:absolute hover:after:border after:border-orange after:left-0 after:-bottom-2`}>Learning</button>
-          <button onClick={()=> setState(3)} className={`${state===3?'after:border after:w-full text-orange':'after:w-0'} relative hover:text-orange transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:h-0 after:absolute hover:after:border after:border-orange after:left-0 after:-bottom-2`}>Other Skills</button>
+      <div className="flex flex-col items-center w-5/6 h-full">
+        <div className="flex justify-center items-center gap-10 w-full h-1/6">
+          <button onClick={() => setState(1)} className={`${state === 1 ? 'after:border after:w-full after:h-10 after:bg-orange text-white' : 'after:w-0 after:h-0'} px-2 relative after:-z-10 transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:absolute hover:after:border  after:border-orange after:left-0 after:-bottom-2`}>Using Now</button>
+          <button onClick={() => setState(2)} className={`${state === 2 ? 'after:border after:w-full after:h-10 after:bg-orange text-white' : 'after:w-0 after:h-0'} px-2 relative after:-z-10 transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:absolute hover:after:border  after:border-orange after:left-0 after:-bottom-2`}>Learning</button>
+          <button onClick={() => setState(3)} className={`${state === 3 ? 'after:border after:w-full after:h-10 after:bg-orange text-white' : 'after:w-0 after:h-0'} px-2 relative after:-z-10 transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:absolute hover:after:border  after:border-orange after:left-0 after:-bottom-2`}>Other Skills</button>
         </div>
 
-        <div className="w-5/6 h-1/2">
-          {
-            state === 1? 
-              display(skillsNow)
+        {/* <div className="w-5/6 h-5/6"> */}
+        {
+          state === 1 ?
+            display(skillsNow)
+            :
+            state === 2 ?
+              display(skillsLearn)
               :
-              state === 2?
-                display(skillsLearn)
-                :
-                display(otherSkills)
-          }
-        </div>
+              display(otherSkills)
+        }
+        {/* </div> */}
       </div>
     </div>
   )
