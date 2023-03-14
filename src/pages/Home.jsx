@@ -43,15 +43,15 @@ const Home = () => {
             </Button>
           </a>
           <div className="flex justify-center gap-12 items-center dark:text-white">
-            <Link>
+            <Link to="https://github.com/cvp30" target="_blank">
               <Github />
             </Link>
 
-            <Link>
+            <Link to="https://www.linkedin.com/in/carlosvaler/" target="_blank">
               <Linkedin />
             </Link>
 
-            <Link>
+            <Link to="https://twitter.com/carlosvaler17" target="_blank">
               <Twitter />
             </Link>
           </div>

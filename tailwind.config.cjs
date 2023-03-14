@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         'card' : "url('https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/landingpage-1.jpg')",
+        'contact': "url('https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=')",
       },
       rotate: {
         '8': '8deg'

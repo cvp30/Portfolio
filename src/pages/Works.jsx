@@ -5,7 +5,7 @@ import {data} from '../data/works'
 
 const Works = () => {
   return (
-    <div id="works" className="w-full h-full mx-auto max-w-screen-2xl flex flex-col items-center gap-16 pt-10">
+    <div id="works" className="w-full h-screen mx-auto max-w-screen-2xl flex flex-col items-center gap-16 pt-10">
       <Title>
         My Works
       </Title>
