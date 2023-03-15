@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col justify-around items-center w-full max-w-screen-2xl mx-auto h-screen pt-10">
+    <div id="contact" className="flex flex-col justify-around items-center w-full max-w-screen-2xl mx-auto h-screen pt-10 font-bold">
       <Title>Contact Me</Title>
 
       <div className='relative box-border h-4/5 max-w-screen-2xl aspect-video flex flex-col'>

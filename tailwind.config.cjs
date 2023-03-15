@@ -41,15 +41,10 @@ module.exports = {
     },
     colors: {
       'light': '#eeeeee',
-      'orange': '#ff5722',
+      'orange': '#fc4a4a',
       'darkblue': '#2d4059',
       'dark': '#222831',
       'white': 'white',
-      // 'darkGray': '#1B1B1B',
-      // 'black': 'black',
-      // 'silver': '#cccaca',
-      // 'primary': '#f2295b',
-      // 'white': '#ffffff'
     }
   },
   plugins: [],

@@ -47,7 +47,7 @@ const About = () => {
           {
             info.map(( card, key )=> {
               return (
-                <div key={key} className="box-border flex gap-2 w-[70%] p-2 shadow-lg shadow-darkblue dark:shadow-white">
+                <div key={key} className="box-border flex gap-2 w-[70%] p-2 border border-dark dark:border-white shadow-lg shadow-darkblue dark:shadow-white">
                   <div className="flex w-1/4 justify-center items-center">
                     <img className="aspect-square " src={card.image} alt="" />
                   </div>

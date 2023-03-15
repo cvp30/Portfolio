@@ -5,13 +5,13 @@ import Skills from "./Skills";
 import Works from "./Works"
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import ModeButton from "../components/ModeButton";
 
 
 const LandingPage = () => {
   return (
     <div>
-
-
+     <ModeButton />
       <NavBar />
       <div className="pl-36">
         <Home />
@@ -19,7 +19,7 @@ const LandingPage = () => {
         <Skills />
         <Works />
         <Contact />
-        <Footer /> 
+        <Footer />
       </div>
     </div>
   )

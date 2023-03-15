@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
 import Button from "../components/Button";
 
 import { Github, Linkedin, Twitter } from "../icons";
@@ -8,31 +6,15 @@ import { Alert } from "../icons";
 
 const Home = () => {
 
-  // const el = useRef(null);
-  // const typed = useRef(null);
-
-  // useEffect(() => {
-  //   const options = {
-  //     stringsElement: '#texto',
-  //     typeSpeed: 80,
-  //     backDelay: 1500,
-  //     fadeOut: true,
-  //     loop: true,
-  //     showCursor: false
-  //   };
-  //   typed.current = new Typed(el.current, options);
-
-
-  // }, []);
-
-
-
   return (
     <div id="home" className="h-screen max-w-screen-2xl mx-auto flex justify-around items-center font-bold">
       <div className=" flex flex-col justify-center gap-10 h-3/5">
         <div className="flex flex-col gap-2 dark:text-white">
           <h1>Hi, I'm Carlos</h1>
-          <h3 className="text-orange">Fullstack Developer</h3>
+          <div className="flex justify-start items-center gap-4">
+            <h3 className="text-[#fc4a4a]">Fullstack Developer</h3>
+            <img className=" h-5" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Animated-Flag-Peru.gif" alt="" />
+          </div>
         </div>
 
         <div className="flex flex-col gap-12">
