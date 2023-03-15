@@ -43,12 +43,12 @@ const Home = () => {
       </div>
 
       <div className="relative h-2/3 flex items-center">
-        <div className="absolute border-orange border-l-8 border-t-8 left-0 top-0 w-1/4 h-1/5"></div>
+        <div className="absolute border-red border-l-8 border-t-8 left-0 top-0 w-1/4 h-1/5"></div>
         <img
           className=" h-full w-full"
           src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png"
         />
-        <div className="absolute border-orange border-b-8 border-r-8 -right-4 -bottom-8 w-1/4 h-1/5"></div>
+        <div className="absolute border-red border-b-8 border-r-8 -right-4 -bottom-8 w-1/4 h-1/5"></div>
       </div>
     </div>
   )

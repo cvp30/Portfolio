@@ -10,9 +10,12 @@
 
   html {
     scroll-behavior: smooth;
-    background: linear-gradient(90deg, rgb(255, 237, 236) 0%, rgba(242,242,242,1) 50%, rgba(255,222,220,1) 100%);
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     color: #2d4059;
     user-select: none;
+  }
+  input, textarea {
+    outline: none;
   }
 
   .titles {
@@ -20,7 +23,7 @@
   }
 
   .dark {
-    background: linear-gradient(to right, #0b0d10, #222831);
+    background: linear-gradient(90deg, rgba(21,23,25,1) 15%, rgba(82,21,21,1) 51%, rgba(21,23,25,1) 78%);
   }
   
   

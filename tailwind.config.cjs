@@ -24,24 +24,14 @@ module.exports = {
       },
       backgroundImage: {
         'card' : "url('https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/landingpage-1.jpg')",
-        'contact': "url('https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=')",
+        'contact': "url('https://colorlib.com/etc/cf/ContactFrom_v18/images/bg-01.jpg')",
       },
-      rotate: {
-        '8': '8deg'
-      },
-      opacity:{
-      },
-      spacing: {
-        '120': '30rem',
-        '112': '38rem',
-        '200': '50rem',
-        '250': '62.5rem',
-        '320': '80rem',
-      }
+
     },
     colors: {
+      'transparent': 'rgba(0,0,0,0)',
       'light': '#eeeeee',
-      'orange': '#fc4a4a',
+      'red': 'red',
       'darkblue': '#2d4059',
       'dark': '#222831',
       'white': 'white',

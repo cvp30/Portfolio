@@ -13,7 +13,7 @@ const LandingPage = () => {
     <div>
      <ModeButton />
       <NavBar />
-      <div className="pl-36">
+      <div className="pl-28">
         <Home />
         <About />
         <Skills />
