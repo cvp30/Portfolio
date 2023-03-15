@@ -1,4 +1,4 @@
-import YourDestiny from "../assets/works/YourDestiny.png";
+import YourDestiny from "../assets/works/YourDestiny.jpg";
 
 
 //team, personal

@@ -22,8 +22,8 @@ const Contact = () => {
     <div id="contact" className="w-full max-w-screen-2xl mx-auto h-screen flex flex-col gap-8 items-center pt-10 font-bold">
       <Title>Contact Me</Title>
 
-      <div className='relative shadow shadow-dark dark:shadow-white box-border bg-no-repeat h-5/6 max-w-screen-2xl aspect-video flex'>
-        <div className='z-10 w-1/3 h-full flex flex-col items-start justify-around p-14 dark:text-white font-normal pl-8'>
+      <div className='relative shadow-lg shadow-dark dark:shadow-white box-border bg-no-repeat h-5/6 max-w-screen-2xl aspect-video flex'>
+        <div className='z-10 w-1/3 h-full flex flex-col items-start justify-around p-14 dark:text-white font-bold pl-8'>
           <Link className='flex gap-3 items-center' to="mailto:carlos.valer.p30@gmail.com">
             <Mail />
             carlos.valer.p30@gmail.com
@@ -66,7 +66,7 @@ const Contact = () => {
             <textarea name="message" className=' border-l-[1px] border-b-[1px] rounded-bl bg-transparent font-mono italic py-1 px-2 h-36 resize-none' id="textareaId" cols="30" rows="10" placeholder='I want to contact you...'></textarea>
           </div>
 
-          <button onClick={sendEmail} className='flex gap-2 justify-center items-center px-3 py-2 mx-auto bg-white dark:text-darkblue  transition-all duration-200 ease outline-none hover:bg-red hover:text-white dark:hover:text-white '>
+          <button onClick={sendEmail} className='flex gap-2 justify-center items-center px-3 py-2 mx-auto bg-white dark:text-dark transition-all duration-200 ease outline-none hover:bg-red hover:text-white dark:hover:text-white '>
             <Mail />
             Send
           </button>
