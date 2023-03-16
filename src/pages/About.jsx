@@ -38,7 +38,7 @@ const About = () => {
           <Link to="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank" >
             <Button>
               <Download />
-              <p>View my CV</p>
+              <p className="xl:text-lg 2xl:text-2xl">View my CV</p>
             </Button>
           </Link>
         </div>
@@ -52,8 +52,8 @@ const About = () => {
                     <img className="aspect-square " src={card.image} alt="" />
                   </div>
                   <div className="w-3/4">
-                    <p className="font-bold">{card.title}</p>
-                    <p className="text-xs tracking-wider">
+                    <p className="xl:text-base 2xl:text-xl font-bold">{card.title}</p>
+                    <p className="xl:text-xs 2xl:text-base tracking-wider">
                       {card.content}
                     </p>
                   </div>

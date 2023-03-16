@@ -3,9 +3,9 @@
 const Title = ({children}) => {
   return (
     <div className="relative">
-      <h2 className="text-red">
+      <p className="text-red xl:text-5xl 2xl:text-6xl">
         {children}
-      </h2>
+      </p>
       <span className="absolute w-1/2 h-1 -bottom-3 bg-red"></span>
       <span className="absolute w-1/5 h-1 -bottom-5 bg-red"></span>
     </div>

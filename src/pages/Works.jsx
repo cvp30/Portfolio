@@ -10,7 +10,7 @@ const Works = () => {
         My Works
       </Title>
 
-      <div className='w-full px-24 flex flex-wrap justify-center gap-12'>
+      <div className='w-full border px-24 flex flex-wrap justify-center gap-12'>
         {
           data.map((work, key) => {
             return (
@@ -18,7 +18,6 @@ const Works = () => {
                 title={work.title}
                 image={work.image}
                 tech={work.tech}
-                type={work.type}
                 githubLink={work.githubLink}
                 deployLink={work.deployLink}
               />

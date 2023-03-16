@@ -12,12 +12,12 @@ const ModeButton = () => {
   return (
     <button
       onClick={handleMode}
-      className='fixed right-8 top-8 flex justify-center items-center w-9 h-9'>
-        <span className={`${!active?'-translate-x-full text-[rgba(0,0,0,0)]':'text-dark'} absolute transition-all duration-500 ease`}>
+      className='fixed xl:right-8 xl:top-8 2xl:right-10 2xl:top-10 flex justify-center items-center xl:h-8 xl:w-8 2xl:h-10 2xl:w-10'>
+        <span className={`${!active?'-translate-x-full text-[rgba(0,0,0,0)]':'text-dark'} h-full absolute transition-all duration-500 ease`}>
           <Sun />
         </span>
 
-        <span className={`${!active?'-translate-x-0 text-white':'translate-x-full text-[rgba(0,0,0,0)]'} absolute transition-all duration-500 ease`}>
+        <span className={`${!active?'-translate-x-0 text-white':'translate-x-full text-[rgba(0,0,0,0)]'} h-full absolute transition-all duration-500 ease`}>
           <Moon />
         </span>
 

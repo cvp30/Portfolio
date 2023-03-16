@@ -13,13 +13,13 @@ const LandingPage = () => {
     <div>
      <ModeButton />
       <NavBar />
-      <div className="pl-28">
+      <div className="xl:pl-28 2xl:pl-36">
         <Home />
         <About />
         <Skills />
         <Works />
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   )

@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import { View, Github } from "../icons";
 
-const Card = ({ title, image, tech, type, githubLink, deployLink }) => {
+const Card = ({ title, image, tech, githubLink, deployLink }) => {
   return (
     <div className="shadow-lg shadow-dark dark:shadow-white dark:text-white w-72 aspect-[3/4] p-3">
       <div className="w-full h-1/2 flex items-center">
         <img className="w-full" src={image} alt="" />
       </div>
 
-      <div className="box-border w-full h-1/2 font-bold flex flex-col items-center gap-2">
+      <div className="box-border w-full xl:h-1/2 2xl:h-2/3 font-bold flex flex-col items-center gap-2">
         
         <h3>{title}</h3>
         <div className=" w-full flex justify-around">

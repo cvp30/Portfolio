@@ -10,30 +10,30 @@ const Home = () => {
     <div id="home" className="h-screen max-w-screen-2xl mx-auto flex justify-around items-center font-bold">
       <div className=" flex flex-col justify-center gap-10 h-3/5">
         <div className="flex flex-col gap-2 dark:text-white">
-          <h1>Hi, I'm Carlos</h1>
+          <h1 className="2xl:text-8xl">Hi, I'm Carlos</h1>
           <div className="flex justify-start items-center gap-4">
-            <h3 className="text-[#fc4a4a]">Fullstack Developer</h3>
+            <p className="text-[#fc4a4a] text-2xl 2xl:text-3xl">Fullstack Developer</p>
             <img className=" h-5" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Animated-Flag-Peru.gif" alt="" />
           </div>
         </div>
 
         <div className="flex flex-col gap-12">
-          <a href="#contact">
+          <a className="mx-auto" href="#contact">
             <Button>
               <Alert />
-              <p>HIRE ME</p>
+              <p className="xl:text-lg 2xl:text-2xl">HIRE ME</p>
             </Button>
           </a>
           <div className="flex justify-center gap-12 items-center dark:text-white">
-            <Link to="https://github.com/cvp30" target="_blank">
+            <Link className="xl:h-9 2xl:h-11" to="https://github.com/cvp30" target="_blank">
               <Github />
             </Link>
 
-            <Link to="https://www.linkedin.com/in/carlosvaler/" target="_blank">
+            <Link className="h-10 2xl:h-12" to="https://www.linkedin.com/in/carlosvaler/" target="_blank">
               <Linkedin />
             </Link>
 
-            <Link to="https://twitter.com/carlosvaler17" target="_blank">
+            <Link className="h-9 2xl:h-11" to="https://twitter.com/carlosvaler17" target="_blank">
               <Twitter />
             </Link>
           </div>
