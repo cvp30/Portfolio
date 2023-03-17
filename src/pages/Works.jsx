@@ -10,13 +10,14 @@ const Works = () => {
         My Works
       </Title>
 
-      <div className='w-full border px-24 flex flex-wrap justify-center gap-12'>
+      <div className='w-full px-24 flex flex-wrap justify-center gap-12'>
         {
           data.map((work, key) => {
             return (
               <Card key={key}
                 title={work.title}
                 image={work.image}
+                description={work.description}
                 tech={work.tech}
                 githubLink={work.githubLink}
                 deployLink={work.deployLink}

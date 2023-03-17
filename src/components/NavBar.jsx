@@ -10,7 +10,7 @@ const NavBar = () => {
         CV
         <span className="text-red">/&gt;</span>
       </a>
-      <div className=' h-5/6 border w-full flex flex-col justify-center items-center xl:gap-10 2xl:gap-12 text-lg font-bold tracking-wide'>
+      <div className=' h-5/6 w-full flex flex-col justify-center items-center xl:gap-10 2xl:gap-12 text-lg font-bold tracking-wide'>
         <Section
           direction="#home"
           icon={<Home />}

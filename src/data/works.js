@@ -6,7 +6,7 @@ export const data = [
   {
     title: "Your Destiny",
     image: YourDestiny,
-    type:"team",
+    description:"A website designed to allow users to search, compare and book hotel rooms online. Users can search for hotels based on their location, price, availability, room type, and other criteria. The website can also offer hotel reviews and photos to help users make an informed decision.",
     tech:[
       "https://img.icons8.com/officel/80/null/react.png",
       "https://img.icons8.com/color/48/null/javascript--v1.png",

@@ -114,6 +114,18 @@ export const View = () => {
   )
 }
 
+export const Preview = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className="hover:drop-shadow-icon dark:hover:drop-shadow-iconDark h-full" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path>
+      <path d="M10 14l10 -10"></path>
+      <path d="M15 4l5 0l0 5"></path>
+    </svg>
+  )
+}
+
+
 export const Sun = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-full" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -144,7 +156,7 @@ export const Moon = () => {
 
 export const Mail = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className="hover:drop-shadow-icon dark:hover:drop-shadow-iconDark h-full"  viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" className="hover:drop-shadow-icon dark:hover:drop-shadow-iconDark h-full" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
       <path d="M3 7l9 6l9 -6"></path>

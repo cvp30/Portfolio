@@ -13,6 +13,9 @@ module.exports = {
       wider: '.05em',
     },
     extend: {
+      spacing: {
+        '120':'30rem',
+      },
       dropShadow:{
         'icon': '0px 2px 1px #2d4059',
         'iconDark': '0px 2px 3px white',
