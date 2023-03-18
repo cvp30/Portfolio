@@ -1,7 +1,7 @@
 
 const Section = ({direction, icon, name}) => {
   return (
-    <a href={direction} className='relative group flex flex-col justify-center items-center w-full xl:h-8 2xl:h-10'>
+    <a href={direction} className='relative group flex flex-col justify-center items-center w-full h-8 2xl:h-10'>
       <span className="flex items-center text-red absolute group-hover:translate-x-10 group-hover:text-[rgba(0,0,0,0)] h-full transition-all duration-500 ease">
         {icon}
       </span>

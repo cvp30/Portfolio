@@ -11,7 +11,7 @@ const Skills = () => {
         {
           arr.map((elem, key) => {
             return (
-              <div key={key} className="flex flex-col items-center gap-2 xl:w-24 xl:h-32 2xl:w-28 2xl:h-40 m-2">
+              <div key={key} className="flex flex-col items-center gap-2 w-24 h-32 2xl:w-28 2xl:h-40 m-2">
                 <img className="w-full p-1" src={elem.icon} alt={elem.title} />
                 <p className="xl:text-sm 2xl:text-lg tracking-wider">{elem.title}</p>
               </div>

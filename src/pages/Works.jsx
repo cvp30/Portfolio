@@ -1,11 +1,10 @@
 import Card from '../components/Card';
 import Title from '../components/Title';
-import {data} from '../data/works'
-
+import {data} from '../data/works';
 
 const Works = () => {
   return (
-    <div id="works" className="w-full h-screen mx-auto max-w-screen-2xl flex flex-col items-center gap-16 pt-10 font-bold">
+    <div id="works" className="w-full h-screen mx-auto max-w-screen-2xl flex flex-col items-center gap-16 pt-10 pb-10 font-bold">
       <Title>
         My Works
       </Title>
@@ -26,7 +25,6 @@ const Works = () => {
           })
         }
       </div>
-
     </div>
   )
 }

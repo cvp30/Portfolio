@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
-import { View, Github, Preview } from "../icons";
+import { Github, Preview } from "../icons";
 
 const Card = ({ title, image, description, tech, githubLink, deployLink }) => {
   return (
-    <div className="rounded-lg box-border flex flex-col gap-3 xl:w-96 2xl:w-120 aspect-[10/11] p-1 shadow-lg shadow-dark dark:shadow-white">
+    <div className=" rounded-lg box-border flex flex-col gap-3 w-96 2xl:w-120 aspect-[10/11] p-1 shadow-lg shadow-dark dark:shadow-white">
       <img src={image} className="w-full rounded-t-lg" />
 
       <div className="w-full flex flex-col gap-2 dark:text-white">
-        <div className="w-full xl:h-6 2xl:h-8 flex justify-start gap-5">
-          <p className="xl:text-xl 2xl:text-2xl">{title}</p>
+        <div className="w-full h-6 2xl:h-8 flex justify-start gap-5">
+          <p className="text-xl 2xl:text-2xl">{title}</p>
           <div className="flex gap-2">
             <Link to={deployLink} target="_blank">
               <Preview />
@@ -20,10 +19,10 @@ const Card = ({ title, image, description, tech, githubLink, deployLink }) => {
           </div>
         </div>
 
-        <p className="xl:text-xs 2xl:text-base font-normal">{description}</p>
+        <p className="text-xs 2xl:text-base font-normal">{description}</p>
 
         <div className="flex flex-col gap-2">
-          <p className="xl:text-xs 2xl:text-base">technologies:</p>
+          <p className="text-xs 2xl:text-base">technologies:</p>
           <div className="flex flex-wrap">
             {
               tech.map((icon, key) => {

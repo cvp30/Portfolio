@@ -11,9 +11,9 @@ import ModeButton from "../components/ModeButton";
 const LandingPage = () => {
   return (
     <div>
-     <ModeButton />
+      <ModeButton />
       <NavBar />
-      <div className="xl:pl-28 2xl:pl-36">
+      <div className="pl-28 2xl:pl-36">
         <Home />
         <About />
         <Skills />

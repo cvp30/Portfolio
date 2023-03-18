@@ -52,8 +52,8 @@ const About = () => {
                     <img className="aspect-square " src={card.image} alt="" />
                   </div>
                   <div className="w-3/4">
-                    <p className="xl:text-base 2xl:text-xl font-bold">{card.title}</p>
-                    <p className="xl:text-xs 2xl:text-base tracking-wider">
+                    <p className="text-base 2xl:text-xl font-bold">{card.title}</p>
+                    <p className="text-xs 2xl:text-base tracking-wider">
                       {card.content}
                     </p>
                   </div>
