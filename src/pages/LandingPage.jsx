@@ -6,12 +6,17 @@ import Works from "./Works"
 import Contact from "./Contact";
 import Footer from "../components/Footer";
 import ModeButton from "../components/ModeButton";
+import Header from "../components/Header";
 
 
 const LandingPage = () => {
   return (
     <div>
-      <ModeButton />
+      
+      <Header />
+      <Home />
+      <About />
+      {/* <ModeButton />
       <NavBar />
       <div className="pl-28 2xl:pl-36">
         <Home />
@@ -19,8 +24,7 @@ const LandingPage = () => {
         <Skills />
         <Works />
         <Contact />
-        {/* <Footer /> */}
-      </div>
+      </div> */}
     </div>
   )
 }

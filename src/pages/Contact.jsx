@@ -31,9 +31,6 @@ const Contact = () => {
       }, (error) => {
         alert(error.text);
       });
-    // }
-
-    // alert("error")
 
 
   };

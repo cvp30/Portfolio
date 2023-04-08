@@ -1,13 +1,12 @@
-
-
-const Title = ({children}) => {
+const Title = ({children, mid=true}) => {
   return (
-    <div className="relative">
-      <p className="text-red text-5xl 2xl:text-6xl">
+    <div className={`${mid ? '':'lg:items-start'} items-center relative flex flex-col  font-bold`}>
+      <p className="title whitespace-nowrap text-4xl lg:text-6xl uppercase">
         {children}
       </p>
-      <span className="absolute w-1/2 h-1 -bottom-3 bg-red"></span>
-      <span className="absolute w-1/5 h-1 -bottom-5 bg-red"></span>
+      <p className="text-2xl lg:text-3xl absolute -bottom-4">
+        {children}
+      </p>
     </div>
   )
 }

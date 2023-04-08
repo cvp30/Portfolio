@@ -5,7 +5,7 @@ import { Download } from "../icons";
 
 
 const About = () => {
-  
+
   const info = [
     {
       title: "Who I am?",
@@ -23,15 +23,42 @@ const About = () => {
       image: "https://img.icons8.com/external-prettycons-flat-prettycons/64/null/external-job-social-media-prettycons-flat-prettycons.png",
     },
   ]
-  
-  return (
-    
-    <div id="about" className="h-screen max-w-screen-2xl pt-10 mx-auto flex flex-col justify-around items-center font-bold dark:text-white">
-      <Title>
-        About Me
-      </Title>
 
-      <div className="w-full h-5/6 flex justify-center items-center">
+  return (
+
+    <section id="about" className="lg:h-screen w-screen max-w-screen-2xl pt-20 mx-auto">
+
+      <div className=" h-[90%] flex flex-col-reverse lg:flex-row justify-center items-center gap-6">
+        <figure className=" lg:w-1/3 h-full flex items-center justify-center">
+          <img className=" aspect-[3/4] h-full" src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png" alt="" />
+        </figure>
+
+        <div className="lg:w-1/3 h-full flex flex-col items-center lg:items-start justify-center gap-16">
+          <div>
+            <Title mid={false}>
+              About Me
+            </Title>
+          </div>
+          
+          <p className="text-sm font-thin">
+            Passionate for web development, self-taught with a great ambition to continue growing and learning.<br /> 
+            Studied Computer Science, along the way discovered passion for web development, trained in it, and currently continuing to learn and improve skills as a fullstack developer.
+          </p>
+
+          <div className="mx-auto">
+            <Button>
+              Download CV
+            </Button>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      {/* <div className="w-full h-5/6 flex justify-center items-center">
         <div className="w-2/5 h-full flex flex-col items-center justify-center gap-10">
           <img className=" aspect-[3/4] h-3/5" src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png" alt="" />
 
@@ -62,8 +89,8 @@ const About = () => {
             })
           }
         </div>
-      </div>
-    </div>
+      </div> */}
+    </section>
   )
 }
 

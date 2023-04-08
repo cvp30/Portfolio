@@ -17,7 +17,7 @@ module.exports = {
         '120':'30rem',
       },
       dropShadow:{
-        'icon': '0px 2px 1px #2d4059',
+        'icon': '0px 2px 5px white',
         'iconDark': '0px 2px 3px white',
       },
       aspectRatio: {
@@ -26,8 +26,8 @@ module.exports = {
         '22/9':'22 / 9'
       },
       backgroundImage: {
-        'card' : "url('https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/landingpage-1.jpg')",
         'contact': "url('https://colorlib.com/etc/cf/ContactFrom_v18/images/bg-01.jpg')",
+        'homeImg': "url('https://static.vecteezy.com/system/resources/previews/008/440/572/original/abstract-red-speed-neon-light-effect-on-black-background-illustration-free-vector.jpg')",
       },
 
     },
