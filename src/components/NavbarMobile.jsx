@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, Close } from "../icons";
 import { motion } from 'framer-motion';
+import SocialNetworks from "./SocialNetworks";
 
 const NavbarMobile = () => {
 
@@ -36,7 +37,7 @@ const NavbarMobile = () => {
 
   return (
     <nav className="relative">
-      <button className="h-8 text-light" onClick={() => setActive(!active)}>
+      <button className="h-8 text-red" onClick={() => setActive(!active)}>
         <Menu />
       </button>
 
@@ -44,18 +45,24 @@ const NavbarMobile = () => {
         variants={variants}
         initial="hidden"
         animate={active ? 'visible' : 'hidden'}
-        className="w-4 h-4 rounded-full bg-[black] fixed top-0 right-0"
+        className="w-4 h-4 rounded-full bg-[#17191c] fixed top-0 right-0"
       />
 
       <motion.div
         variants={itemVariants}
         initial='hidden'
         animate={active ? 'visible' : ''}
-        className={`${active ? 'right-0' : '-right-full'} fixed top-0 bottom-0 w-full flex flex-col justify-center items-center gap-8 text-sm font-semibold transition-all duration-300 overflow-hidden`}
+        className={`${active ? 'right-0' : '-right-full'}  fixed top-0 bottom-0 w-full flex flex-col justify-center items-center gap-8 text-sm font-semibold transition-all duration-300 overflow-hidden`}
       >
+        <div className="logo text-3xl">
+          Carlos Valer  
+        </div>
+
+        <hr className="text-line w-11/12"/>
+
         <div
           onClick={() => setActive(false)}
-          className="h-8 absolute top-3 right-2"
+          className="h-8 p-2 absolute top-3 right-2 text-red rounded-full bg-background"
         >
           <Close />
         </div>
@@ -63,10 +70,16 @@ const NavbarMobile = () => {
         {
           navigationItems.map((item, key) => {
             return (
-              <a key={key} onClick={()=> setActive(false)} className="capitalize" href={`#${item}`}>{item}</a>
+              <a key={key} onClick={() => setActive(false)} className="capitalize" href={`#${item}`}>{item}</a>
             )
           })
         }
+
+        <hr className="text-line w-11/12"/>
+
+        <div className="w-full flex justify-center">
+          <SocialNetworks />
+        </div>
 
       </motion.div>
 

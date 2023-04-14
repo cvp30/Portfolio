@@ -1,19 +1,24 @@
 import { useState } from "react"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Keyboard, Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/free-mode";
 import Title from "../components/Title"
 import { skillsNow, skillsLearn, otherSkills } from "../data/skills"
+
+
 const Skills = () => {
 
   const [state, setState] = useState(1);
 
   const display = (arr) => {
     return (
-      <div className="h-5/6 w-full flex flex-wrap justify-center items-start gap-x-4 py-8">
+      <div className="h-5/6 w-full flex flex-wrap justify-center items-start py-8">
         {
           arr.map((elem, key) => {
             return (
-              <div key={key} className="flex flex-col items-center gap-2 w-24 h-32 2xl:w-28 2xl:h-40 m-2">
-                <img className="w-full p-1" src={elem.icon} alt={elem.title} />
-                <p className="xl:text-sm 2xl:text-lg tracking-wider">{elem.title}</p>
+              <div key={key} className="relative h-36 aspect-square flex justify-center items-center">
+                <img className="w-10/12 p-4 hover:w-full transition-all duration-500 ease-in-out" src={elem.icon} alt={elem.title} />
               </div>
             )
           })
@@ -21,17 +26,30 @@ const Skills = () => {
       </div>
     )
   }
+
+  const options = [
+    'Using Now',
+    'Learning',
+    'Other Skills',
+  ]
+
   return (
-    <div id="skills" className="h-screen max-w-screen-2xl pt-10 mx-auto flex flex-col items-center gap-16 font-bold dark:text-white">
+    <div id="skills" className="lg:h-screen h-full max-w-screen-2xl py-20 mx-auto flex flex-col items-center gap-16 font-bold dark:text-white">
       <Title>
         My Skills
       </Title>
 
-      <div className="flex flex-col items-center w-5/6 h-full">
-        <div className="flex justify-center items-center gap-10 w-full h-1/6">
-          <button onClick={() => setState(1)} className={`${state === 1 ? 'after:border after:w-full after:h-10 after:bg-red text-white' : 'after:w-0 after:h-0'} xl:text-base 2xl:text-xl px-2 relative after:-z-10 transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:absolute hover:after:border  after:border-red after:left-0 after:-bottom-2`}>Using Now</button>
-          <button onClick={() => setState(2)} className={`${state === 2 ? 'after:border after:w-full after:h-10 after:bg-red text-white' : 'after:w-0 after:h-0'} xl:text-base 2xl:text-xl px-2 relative after:-z-10 transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:absolute hover:after:border  after:border-red after:left-0 after:-bottom-2`}>Learning</button>
-          <button onClick={() => setState(3)} className={`${state === 3 ? 'after:border after:w-full after:h-10 after:bg-red text-white' : 'after:w-0 after:h-0'} xl:text-base 2xl:text-xl px-2 relative after:-z-10 transition hover:after:duration-300 hover:after:ease-out  hover:after:w-full after:absolute hover:after:border  after:border-red after:left-0 after:-bottom-2`}>Other Skills</button>
+      <div className="hidden lg:flex flex-col items-center w-5/6 h-full">
+        <div className="flex justify-center items-center lg:gap-0 w-[40rem] h-20 font-normal relative shadow-rightBottom rounded-xl after:-z-10 after:rounded-xl after:absolute after:w-full after:h-full after:shadow-leftTop">
+          {
+            options.map((opt, idx) => {
+              return (
+                <button key={idx} onClick={() => setState(idx + 1)} className={`${state === idx + 1 ? 'shadow-rightBottom rounded-xl' : ''} h-full w-1/3 uppercase hover:shadow-rightBottom hover:rounded-xl transition-all duration-500 ease-in-out`}>
+                  {opt}
+                </button>
+              )
+            })
+          }
         </div>
 
         {
@@ -44,6 +62,51 @@ const Skills = () => {
               display(otherSkills)
         }
       </div>
+
+      <div className="lg:hidden w-full h-16">
+        <Swiper
+
+          speed={1500}
+          freeMode={true}
+          grabCursor={true}
+          modules={[Autoplay, Keyboard]}
+          autoplay={{
+            delay: 700,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          className="h-full"
+          breakpoints={{
+            0: {
+              slidesPerView: 4,
+              spaceBetween: 0,
+              centeredSlides: true,
+            },
+            480: {
+              slidesPerView: 5,
+              spaceBetween: 0,
+              centeredSlides: true,
+            },
+          }}
+        >
+          {
+            [...skillsNow, ...otherSkills].map((skill, key) => {
+              return (
+                <SwiperSlide key={key}>
+                  <img src={skill.icon} className="h-full" />
+                </SwiperSlide>
+              )
+            })
+          }
+
+        </Swiper>
+      </div>
+
+
+
+
     </div>
   )
 }

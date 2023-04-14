@@ -16,6 +16,10 @@ module.exports = {
       spacing: {
         '120':'30rem',
       },
+      boxShadow: {
+        'leftTop': '5px -5px 10px rgba(116,116,116,.2)',
+        'rightBottom': '-5px 5px 15px rgba(0,0,0,.5)',
+      },
       dropShadow:{
         'icon': '0px 2px 5px white',
         'iconDark': '0px 2px 3px white',
@@ -32,11 +36,15 @@ module.exports = {
 
     },
     colors: {
+      'background': '#212428',
+      'red': 'red',
+      'white': 'white',
+      'black': 'black',
+      'line': '#3c3c3c',
+
       'transparent': 'rgba(0,0,0,0)',
       'light': '#eeeeee',
-      'red': 'red',
       'dark': '#222831',
-      'white': 'white',
     }
   },
   plugins: [],

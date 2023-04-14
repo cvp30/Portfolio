@@ -12,17 +12,28 @@ import Header from "../components/Header";
 const LandingPage = () => {
   return (
     <div>
-      
       <Header />
-      <Home />
-      <About />
+      <div className="w-full lg:w-10/12 mx-auto max-w-screen-2xl">
+        <Home />
+        <hr className="text-line "/>
+        <About />
+        <hr className="text-line "/>
+        <Skills />
+        <hr className="text-line "/>
+        <Works />
+        {/* <hr className="text-line "/>
+        <Contact /> */}
+      </div>
+      {/* <About />
+      <Skills />
+      <Works /> */}
       {/* <ModeButton />
       <NavBar />
       <div className="pl-28 2xl:pl-36">
         <Home />
         <About />
         <Skills />
-        <Works />
+        // <Works />
         <Contact />
       </div> */}
     </div>

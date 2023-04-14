@@ -5,7 +5,7 @@ export const skillsNow = [
   },
   {
     title: "Javascript",
-    icon: "https://img.icons8.com/color/48/null/javascript--v1.png",
+    icon: "https://img.icons8.com/color/96/null/javascript--v1.png",
   },
   {
     title: "Express.js",
