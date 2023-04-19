@@ -14,7 +14,14 @@ module.exports = {
     },
     extend: {
       spacing: {
+        '156': '39rem',
+        
         '120':'30rem',
+        '132': '33rem',
+        '112':'28rem',
+        '160':'40rem',
+        '194':'48.5rem',
+        '18':'4.5rem',
       },
       boxShadow: {
         'leftTop': '5px -5px 10px rgba(116,116,116,.2)',
@@ -25,9 +32,9 @@ module.exports = {
         'iconDark': '0px 2px 3px white',
       },
       aspectRatio: {
-        '2/3': '9 / 9',
-        '20/9':'20 / 9',
-        '22/9':'22 / 9'
+        '3/4': '3 / 4',
+        '4/3': '4 / 3',
+        '9/10': '9 / 10',
       },
       backgroundImage: {
         'contact': "url('https://colorlib.com/etc/cf/ContactFrom_v18/images/bg-01.jpg')",
@@ -41,7 +48,7 @@ module.exports = {
       'white': 'white',
       'black': 'black',
       'line': '#3c3c3c',
-
+      
       'transparent': 'rgba(0,0,0,0)',
       'light': '#eeeeee',
       'dark': '#222831',

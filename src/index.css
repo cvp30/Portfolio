@@ -15,51 +15,18 @@
     letter-spacing: 0.03rem;
     user-select: none;
     background: #212428;
-    /* background: linear-gradient(90deg, black 22%, rgb(67, 14, 14) 50%, black 78%); */
     color: white;
   }
+
+
 
   .logo {
     font-family: 'Kalam', cursive;
   }
 
-  .card {
-    animation: neon 3s infinite;
-  }
-
-  @keyframes neon {
-    0% {
-      box-shadow: inset 0 0 10px red, 0 0 5px red;
-    }
-
-    50% {
-      box-shadow: inset 0 0 12px red, 0 0 10px red;
-    }
-
-    100% {
-      box-shadow: inset 0 0 10px red, 0 0 5px red;
-    }
-  }
-
   .title {
     -webkit-text-stroke: 2px rgba(106, 106, 106, 0.541);
     color: transparent;
-  }
-
-  .cardWork {
-    animation: cardwork .5s ease-in-out both;
-  }
-
-  @keyframes cardwork {
-    0% {
-      transform: scale(1) translateY(0);
-      transform-origin: 50% 16%;
-    }
-
-    100% {
-      transform: scale(1.1) translateY(-5px);
-      transform-origin: top;
-    }
   }
 }
 

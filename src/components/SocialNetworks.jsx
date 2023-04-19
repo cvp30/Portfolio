@@ -2,7 +2,7 @@ import { Github, Linkedin, Twitter } from "../icons";
 
 const SocialNetworks = () => {
   return (
-    <div className=" h-6 flex gap-6">
+    <div className=" h-6 2xl:h-8 flex gap-6">
       <a href="https://github.com/cvp30" target="_blank">
         <Github />
       </a>

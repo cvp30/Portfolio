@@ -31,49 +31,48 @@ const About = () => {
 
   return (
 
-    <section id="about" className="w-full h-full max-w-screen-2xl pt-20 pb-14 mx-auto flex flex-col gap-4">
-      <div className=" h-96 flex flex-col-reverse lg:flex-row justify-center items-center">
+    <section id="about" className="w-full h-full max-w-screen-2xl pt-32 lg:pt-20 2xl:pt-28 pb-20 mx-auto flex flex-col gap-4">
+      <div className="h-96 2xl:h-120 flex flex-col-reverse lg:flex-row justify-center items-center">
 
         <figure className="hidden lg:w-1/2 h-full lg:flex items-center justify-center">
-          <img className=" aspect-[3/4] h-full" src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png" alt="" />
+          <img className=" aspect-3/4 h-full" src="https://hrkit.rometheme.pro/steven/wp-content/uploads/sites/54/2022/08/photo1.png" alt="" />
         </figure>
 
         <div className="lg:w-1/2 h-full flex flex-col items-center lg:items-start justify-center gap-16">
-          <div>
-            <Title mid={false}>
-              About Me
-            </Title>
-          </div>
 
-          <p className="text-sm text-center lg:text-start font-thin p-2 lg:p-0">
+          <Title mid={false}>
+            About Me
+          </Title>
+
+          <p className="text-sm 2xl:text-lg text-center lg:text-start font-thin p-2 lg:p-0">
             Passionate for web development, self-taught with a great ambition to continue growing and learning.<br />
             Studied Computer Science, along the way discovered passion for web development, trained in it, and currently continuing to learn and improve skills as a fullstack developer.
           </p>
 
-          <div className="mx-auto">
+          <a href="https://www.dropbox.com/s/mzqerludm7pz3fn/CV.pdf?dl=0" target="_blank" className=" rounded-xl mx-auto">
             <Button>
               Download CV
             </Button>
-          </div>
+          </a>
         </div>
       </div>
 
-      <div className="hidden w-[90%] lg:w-full h-64 lg:flex flex-col mx-auto lg:flex-row gap-8 mt-10">
+      <div className="hidden w-[90%] lg:w-full h-64 2xl:h-80 lg:flex flex-col items-center justify-center mx-auto lg:flex-row gap-8 mt-10">
         {
           features.map((feature, key) => {
             return (
-              <div key={key} className="h-64 lg:h-full aspect-[4/3] flex flex-col relative shadow-rightBottom rounded-xl after:-z-10 after:rounded-xl after:absolute after:w-full after:h-full after:shadow-leftTop">
+              <div key={key} className="h-full lg:h-full aspect-4/3 flex flex-col relative shadow-rightBottom rounded-xl after:-z-10 after:rounded-xl after:absolute after:w-full after:h-full after:shadow-leftTop">
                 <div className="h-1/3 w-full flex justify-center text-red">
                   {feature.icon}
                 </div>
 
                 <div className="h-2/3 w-full flex flex-col justify-start gap-2 p-3">
-                  <p className="w-full text-2xl uppercase font-bold">{feature.title}</p>
-                  <p className="w-full ">{feature.text}</p>
+                  <p className="w-full text-2xl 2xl:text-3xl uppercase font-bold">{feature.title}</p>
+                  <p className="w-full 2xl:text-xl">{feature.text}</p>
                 </div>
               </div>
             )
-          } )
+          })
         }
       </div>
       <div className="lg:hidden w-[95%] lg:w-full h-72 flex mx-auto items-center mt-10">
