@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode:"class",
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    letterSpacing:{
+    letterSpacing: {
       tight: '-.025em',
       normal: '0',
       wide: '.025em',
@@ -15,21 +15,22 @@ module.exports = {
     extend: {
       spacing: {
         '156': '39rem',
-        
-        '120':'30rem',
+
+        '120': '30rem',
         '132': '33rem',
-        '112':'28rem',
-        '160':'40rem',
-        '194':'48.5rem',
-        '18':'4.5rem',
+        '112': '28rem',
+        '160': '40rem',
+        '194': '48.5rem',
+        '18': '4.5rem',
       },
       boxShadow: {
         'leftTop': '5px -5px 10px rgba(116,116,116,.2)',
-        'rightBottom': '-5px 5px 15px rgba(0,0,0,.5)',
+        'rightBottom': '-5px 4px 10px #0099ff',
       },
-      dropShadow:{
+      dropShadow: {
         'icon': '0px 2px 5px white',
         'iconDark': '0px 2px 3px white',
+        'iconSky': '0px 2px 3px #0099ff',
       },
       aspectRatio: {
         '3/4': '3 / 4',
@@ -44,11 +45,12 @@ module.exports = {
     },
     colors: {
       'background': '#212428',
-      'red': 'red',
+      'red': 'rgb(209,0,36)',
       'white': 'white',
       'black': 'black',
       'line': '#3c3c3c',
-      
+      'skyBlue': '#0099ff',
+
       'transparent': 'rgba(0,0,0,0)',
       'light': '#eeeeee',
       'dark': '#222831',

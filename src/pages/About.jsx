@@ -62,7 +62,7 @@ const About = () => {
           features.map((feature, key) => {
             return (
               <div key={key} className="h-full lg:h-full aspect-4/3 flex flex-col relative shadow-rightBottom rounded-xl after:-z-10 after:rounded-xl after:absolute after:w-full after:h-full after:shadow-leftTop">
-                <div className="h-1/3 w-full flex justify-center text-red">
+                <div className="h-1/3 w-full flex justify-center text-[#0099ff]">
                   {feature.icon}
                 </div>
 

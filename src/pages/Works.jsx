@@ -9,7 +9,7 @@ const Works = () => {
         My Works
       </Title>
 
-      <div className='flex flex-wrap items-center justify-center'>
+      <div className='flex flex-wrap items-center justify-center gap-3'>
         {
           data.map((work, key) => {
             return (

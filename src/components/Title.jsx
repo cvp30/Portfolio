@@ -1,7 +1,7 @@
-const Title = ({children, mid=true}) => {
+const Title = ({ children, mid = true }) => {
   return (
-    <div className={`${mid ? '':'lg:items-start'} items-center relative flex flex-col  font-bold`}>
-      <p className=" text-3xl lg:text-4xl 2xl:text-5xl text-red">
+    <div className={`${mid ? '' : 'lg:items-start'} items-center relative flex flex-col  font-bold`}>
+      <p className=" text-3xl lg:text-4xl 2xl:text-5xl text-skyBlue drop-shadow-iconSky">
         {children}
       </p>
 
