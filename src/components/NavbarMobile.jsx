@@ -37,7 +37,7 @@ const NavbarMobile = () => {
 
   return (
     <nav className="relative">
-      <button className="h-8 text-red" onClick={() => setActive(!active)}>
+      <button className="h-8 text-skyBlue" onClick={() => setActive(!active)}>
         <Menu />
       </button>
 
@@ -55,14 +55,14 @@ const NavbarMobile = () => {
         className={`${active ? 'right-0' : '-right-full'}  fixed top-0 bottom-0 w-full flex flex-col justify-center items-center gap-8 text-sm font-semibold transition-all duration-300 overflow-hidden`}
       >
         <div className="logo text-3xl">
-          Carlos Valer  
+          Carlos Valer
         </div>
 
-        <hr className="text-line w-11/12"/>
+        <hr className="text-line w-11/12" />
 
         <div
           onClick={() => setActive(false)}
-          className="h-8 p-2 absolute top-3 right-2 text-red rounded-full bg-background"
+          className="h-8 p-2 absolute top-3 right-2 text-skyBlue rounded-full bg-background"
         >
           <Close />
         </div>
@@ -75,7 +75,7 @@ const NavbarMobile = () => {
           })
         }
 
-        <hr className="text-line w-11/12"/>
+        <hr className="text-line w-11/12" />
 
         <div className="w-full flex justify-center">
           <SocialNetworks />

@@ -19,7 +19,7 @@ const Header = () => {
       <div className="w-full h-full max-w-screen-2xl mx-auto flex items-center justify-between lg:px-10 px-2">
 
         {/* logo */}
-        <a href="#" className="logo text-3xl 2xl:text-4xl text-skyBlue">
+        <a href="#" className="logo text-3xl 2xl:text-4xl text-skyBlue hover:drop-shadow-iconSky transition-all duration-200 ease-in-out">
           Carlos Valer
         </a>
 

@@ -8,7 +8,7 @@ const NavBar = () => {
       {
         navigationItems.map((item, key) => {
           return (
-            <a key={key} className="capitalize hover:text-skyBlue hover:drop-shadow-iconSky" href={`#${item}`}>{item}</a>
+            <a key={key} className="capitalize hover:text-skyBlue hover:drop-shadow-iconSky transition-all duration-200 ease-in-out" href={`#${item}`}>{item}</a>
           )
         })
       }
