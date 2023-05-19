@@ -1,8 +1,15 @@
 import YourDestiny from "../assets/works/YourDestiny.jpg";
 import Ecommerce from "../assets/works/ecommerce.png"
-
+import Countries from "../assets/works/Countries.png"
 //team, personal
 export const data = [
+  {
+    title: "Countries App",
+    image: Countries,
+    description: "App that allows users to see details about all cities, being able to create activities, it also has filtering options by continents, population.",
+    githubLink: "https://github.com/cvp30/PI-COUNTRIES-HENRY",
+    deployLink: "https://countries-app-cvp30.vercel.app/"
+  },
   {
     title: "Your Destiny",
     image: YourDestiny,
